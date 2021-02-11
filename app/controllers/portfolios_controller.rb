@@ -46,9 +46,7 @@ class PortfoliosController < ApplicationController
     respond_to do |format|
       format.html { redirect_to portfolios_url, notice: "Portfolio was successfully destroyed." }
     end
-
   end
-
-
+  
 end
 

@@ -1,4 +1,13 @@
 
+3.times do |topic|
+
+Topic.create!(
+title: "Topic #{topic}"
+  )
+end
+
+puts "3 Topics created"
+
 10.times do |blog|
   Blog.create!(
     title: "My Blog Post #{blog}",
@@ -8,8 +17,9 @@
      ipsa quae ab illo inventore veritatis et quasi 
      chitecto beatae vitae dicta sunt explicabo. 
      Nemo enim ipsam voluptatem quia voluptas sit
-      aspernatur aut odit aut fugit, sed quia"
-  )
+      aspernatur aut odit aut fugit, sed quia",
+    topic_id: Topic.last.id
+    )
 end
 
 puts "10 blog posts created"
@@ -44,3 +54,12 @@ end
 end
 
 puts "9 portfolio items created"
+
+
+3.times do |technology|
+ Portfolio.last.technologies.create!(
+  name: "Technology #{technology}",
+  )
+end
+
+puts "3 technologies created"

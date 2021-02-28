@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/rwedzony/rafsoft_view_tool
+  revision: 97b531a5590aaa95290cc98dcc39ac8c2048ebd1
+  specs:
+    rafsoft_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -196,6 +202,7 @@ DEPENDENCIES
   pg (~> 0.18)
   pry-byebug
   puma (~> 3.0)
+  rafsoft_view_tool!
   rails (~> 5.0.0)
   sass-rails (~> 5.0)
   spring

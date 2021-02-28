@@ -15,4 +15,9 @@ module ApplicationHelper
     end 
   end
 
+
+  def copyright_generator
+    RafsoftViewTool::Renderer.copyright 'Rafsoft', 'All rights reserved'
+  end
+
 end
